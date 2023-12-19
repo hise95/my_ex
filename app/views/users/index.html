@@ -1,0 +1,19 @@
+<h1>Користувачі</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ім'я</th>
+      <th>Електронна адреса</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.name %></td>
+        <td><%= user.email %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
